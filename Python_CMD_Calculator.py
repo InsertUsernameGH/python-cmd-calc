@@ -1,5 +1,5 @@
 import random
-import cmath
+import math
 
 command = 0
 number_1 = 0
@@ -28,6 +28,7 @@ while True:
         print("'exponent' - This command allows you to raise a number to the power of your choice.")
         print("'modulus' - This command allows you to find the modulus of two numbers.")
         print("'double' - This command allows you to double a number.")
+        print("'square_root' - This command allows you to find the square root of a number.")
         print(" ")
         print("Fun commands: ")
         print("'say' - This command allows the Python CMDCalc to print something of your choice.")
@@ -89,7 +90,8 @@ while True:
 
     if command == "square_root":
         number_1 = input("Number: ")
-        print("This command is not finished yet.")
+        output_number = math.sqrt(int(number_1))
+        print(output_number)
         
 # Algebraic expressions are fun!
     if command == "algebra":
@@ -116,3 +118,4 @@ while True:
         output_number = int(number_1) * 2
         print(output_number)
                                 
+
